@@ -20,7 +20,7 @@ export {
 
 export const unstable_settings = {
   // Ensure that reloading on `/modal` keeps a back button present.
-  initialRouteName: 'Screens/SigninScreen',
+  initialRouteName: 'index',
 }
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
@@ -57,14 +57,8 @@ function RootLayoutNav() {
     <Provider store={store}>
       <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
         <Stack>
-          <Stack.Screen
-            name="Screens/SigninScreen"
-            options={{ headerShown: false }}
-          />
-          <Stack.Screen
-            name="Screens/HomePage"
-            options={{ headerShown: false }}
-          />
+          <Stack.Screen name="index" options={{ headerShown: false }} />
+          <Stack.Screen name="HomePage" options={{ headerShown: false }} />
         </Stack>
       </ThemeProvider>
     </Provider>

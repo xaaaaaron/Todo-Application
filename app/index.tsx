@@ -2,14 +2,14 @@ import React, { useState } from 'react'
 import { StyleSheet, KeyboardAvoidingView } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { useNavigation } from 'expo-router'
-import { ROUTES } from '../helpers'
 
-import Colors from '../../constants/Colors'
-import { Theme } from '../typedefs/types'
-import { Text, View, TextInput } from '../../components/Themed'
-import Button from '../../components/atoms/Button'
-import { StyledText } from '../../components/atoms/StyledText'
-import { useColorScheme } from '../../components/useColorScheme'
+import Colors from '../constants/Colors'
+import { Theme } from './typedefs/types'
+import { Text, View, TextInput } from '../components/Themed'
+import Button from '../components/atoms/Button'
+import { StyledText } from '../components/atoms/StyledText'
+import { useColorScheme } from '../components/useColorScheme'
+import { ROUTES } from './helpers'
 
 const SigninScreen = () => {
   const navigation = useNavigation()

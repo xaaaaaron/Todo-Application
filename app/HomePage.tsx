@@ -1,22 +1,22 @@
 import React, { useState } from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { useSelector, useDispatch } from 'react-redux'
-import { RootState } from '../../store/store'
+import { RootState } from '../store/store'
 import { Text, StyleSheet, FlatList, View } from 'react-native'
 import {
   addTodo,
   toggleTodo,
   updateTodoText,
   remove,
-} from '../../store/slice/todoSlice'
-import Card from '../../components/Molecules/Card'
-import { Todo, Theme } from '../typedefs/types'
-import CustomHeader from '../../components/Molecules/Header'
-import { useColorScheme } from '../../components/useColorScheme'
-import CustomModal from '../../components/atoms/Modal'
-import AddTodo from '../../components/Molecules/AddTodo'
-import { StyledText } from '../../components/atoms/StyledText'
-import Colors from '../../constants/Colors'
+} from '../store/slice/todoSlice'
+import Card from '../components/Molecules/Card'
+import { Todo, Theme } from './typedefs/types'
+import CustomHeader from '../components/Molecules/Header'
+import { useColorScheme } from '../components/useColorScheme'
+import CustomModal from '../components/atoms/Modal'
+import AddTodo from '../components/Molecules/AddTodo'
+import { StyledText } from '../components/atoms/StyledText'
+import Colors from '../constants/Colors'
 
 const HomePage = () => {
   const dispatch = useDispatch()
